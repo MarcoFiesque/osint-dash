@@ -1,0 +1,28 @@
+/* Animation pour les catégories repliables */
+.collapse-transition {
+  transition: all 0.3s ease;
+}
+
+/* Style pour le bouton de catégorie */
+.category-button {
+  transition: background-color 0.2s ease;
+}
+
+.category-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* Style pour les icônes de flèche */
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+/* Style pour les cartes d'outils */
+.tool-card {
+  transition: all 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}

@@ -1,0 +1,42 @@
+<aside
+  [class.w-50]="sidebarOpen"
+  [class.w-20]="!sidebarOpen"
+  [class.items-start]="sidebarOpen"
+  [class.items-center]="!sidebarOpen"
+  class="fixed top-16 bottom-0 bg-gray-800 text-white items-center flex flex-col px-4 py-6 space-y-4 transition-all duration-300 z-10"
+>
+  <button 
+    (click)="toggleSidebar()" 
+    class="text-gray-400 hover:text-white self-end mb-4 hover:cursor-pointer"
+  >
+    <mat-icon>{{ sidebarOpen ? 'chevron_left' : 'chevron_right' }}</mat-icon>
+  </button>
+
+  <a 
+    routerLink="/" 
+    [routerLinkActiveOptions]="{ exact: true }"
+    routerLinkActive="bg-gray-700 text-white" 
+    class="hover: cursor-pointer flex items-center p-3 rounded-lg hover:bg-gray-700 transition-colors"
+  >
+    <mat-icon [class.mr-3]="sidebarOpen" [class.mx-auto]="!sidebarOpen">home</mat-icon>
+    <span *ngIf="sidebarOpen">Home</span>
+  </a>
+
+  <a 
+    routerLink="/ip" 
+    routerLinkActive="bg-gray-700 text-white" 
+    class="hover: cursor-pointer flex items-center p-3 rounded-lg hover:bg-gray-700 transition-colors"
+  >
+    <mat-icon [class.mr-3]="sidebarOpen" [class.mx-auto]="!sidebarOpen">public</mat-icon>
+    <span *ngIf="sidebarOpen">IP Inspector</span>
+  </a>
+
+  <a 
+    routerLink="/cyber-tools" 
+    routerLinkActive="bg-gray-700 text-white" 
+    class="hover: cursor-pointer flex items-center p-3 rounded-lg hover:bg-gray-700 transition-colors"
+  >
+    <mat-icon [class.mr-3]="sidebarOpen" [class.mx-auto]="!sidebarOpen">biotech</mat-icon>
+    <span *ngIf="sidebarOpen">Cyber tools</span>
+  </a>
+</aside>

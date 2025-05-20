@@ -1,0 +1,152 @@
+[
+  {
+    "category": "OSINT",
+    "tools": [
+      {
+        "name": "Shodan",
+        "url": "https://www.shodan.io/",
+        "description": "Moteur de recherche d'appareils connectés exposés sur Internet"
+      },
+      {
+        "name": "Censys",
+        "url": "https://censys.io/",
+        "description": "Analyse l'exposition des systèmes sur Internet"
+      },
+      {
+        "name": "Maltego",
+        "url": "https://www.maltego.com/",
+        "description": "Outil de cartographie des relations entre données OSINT"
+      },
+      {
+        "name": "theHarvester",
+        "url": "https://github.com/laramies/theHarvester",
+        "description": "Collecte d'emails, sous-domaines et autres données publiques"
+      },
+      {
+        "name": "SpiderFoot",
+        "url": "https://www.spiderfoot.net/",
+        "description": "Plateforme automatisée d'intelligence sur les menaces"
+      }
+    ]
+  },
+  {
+    "category": "Scan de vulnérabilités",
+    "tools": [
+      {
+        "name": "Nikto",
+        "url": "https://github.com/sullo/nikto",
+        "description": "Scanner web open source de vulnérabilités courantes"
+      },
+      {
+        "name": "Vulners",
+        "url": "https://vulners.com/",
+        "description": "Base de données d'exploits et de vulnérabilités avec API"
+      },
+      {
+        "name": "OpenVAS",
+        "url": "https://www.openvas.org/",
+        "description": "Scanner de vulnérabilités réseau open-source"
+      },
+      {
+        "name": "OWASP ZAP",
+        "url": "https://www.zaproxy.org/",
+        "description": "Outil de test de pénétration d'applications web"
+      },
+      {
+        "name": "Trivy",
+        "url": "https://github.com/aquasecurity/trivy",
+        "description": "Scanner de vulnérabilités pour conteneurs et dépendances"
+      }
+    ]
+  },
+  {
+    "category": "Emails & fuites",
+    "tools": [
+      {
+        "name": "Have I Been Pwned",
+        "url": "https://haveibeenpwned.com/",
+        "description": "Vérifie si une adresse email est compromise"
+      },
+      {
+        "name": "DeHashed",
+        "url": "https://www.dehashed.com/",
+        "description": "Moteur de recherche de fuites de données"
+      },
+      {
+        "name": "Snusbase",
+        "url": "https://snusbase.com/",
+        "description": "Base de données de fuites vérifiées"
+      },
+      {
+        "name": "LeakCheck",
+        "url": "https://leakcheck.io/",
+        "description": "Vérification de comptes compromis"
+      },
+      {
+        "name": "IntelX",
+        "url": "https://intelx.io/",
+        "description": "Moteur de recherche de fuites et données sensibles"
+      }
+    ]
+  },
+  {
+    "category": "Analyse de malware",
+    "tools": [
+      {
+        "name": "VirusTotal",
+        "url": "https://www.virustotal.com/",
+        "description": "Analyse de fichiers suspects avec multiples moteurs antivirus"
+      },
+      {
+        "name": "Hybrid Analysis",
+        "url": "https://www.hybrid-analysis.com/",
+        "description": "Sandbox gratuite pour analyse de malware"
+      },
+      {
+        "name": "Any.Run",
+        "url": "https://any.run/",
+        "description": "Sandbox interactive pour analyse de malware"
+      },
+      {
+        "name": "Cuckoo Sandbox",
+        "url": "https://cuckoosandbox.org/",
+        "description": "Solution open-source d'analyse de malware"
+      },
+      {
+        "name": "MalwareBazaar",
+        "url": "https://bazaar.abuse.ch/",
+        "description": "Collection et partage d'échantillons de malware"
+      }
+    ]
+  },
+  {
+    "category": "Réseau & DNS",
+    "tools": [
+      {
+        "name": "Nmap",
+        "url": "https://nmap.org/",
+        "description": "Scanner réseau open-source pour découverte d'hôtes et services"
+      },
+      {
+        "name": "Wireshark",
+        "url": "https://www.wireshark.org/",
+        "description": "Analyseur de protocoles réseau"
+      },
+      {
+        "name": "FOCA",
+        "url": "https://github.com/ElevenPaths/FOCA",
+        "description": "Outil d'analyse de métadonnées et d'empreintes numériques"
+      },
+      {
+        "name": "DNSDumpster",
+        "url": "https://dnsdumpster.com/",
+        "description": "Recherche d'enregistrements DNS et cartographie d'infrastructure"
+      },
+      {
+        "name": "SecurityTrails",
+        "url": "https://securitytrails.com/",
+        "description": "Plateforme d'intelligence sur les noms de domaine et DNS"
+      }
+    ]
+  }
+]

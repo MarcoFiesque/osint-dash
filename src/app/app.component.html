@@ -1,4 +1,18 @@
-<h1 class="flex h-[100vh] bg-black justify-center items-center text-4xl font-bold text-yellow-400">
-  Dark back, yellow centered text ? 👍🏾 tailwindCSS works
-</h1>
-<router-outlet />
+<div class="min-h-screen flex flex-col bg-gray-50">
+  <app-header class="fixed top-0 left-0 right-0 z-10"></app-header>
+
+  <div class="flex flex-1 pt-16">
+    <app-sidebar (sidebarOpened)="toggleSidebarState($event)" class="fixed h-full"></app-sidebar>
+
+    <main [class.ml-50]="sidebarOpen" [class.ml-20]="!sidebarOpen" class="flex-1 px-6 py-4 transition-all duration-300">
+      <router-outlet></router-outlet>
+    </main>
+    
+  </div>
+  <footer class="bg-gray-800 text-white py-4 mt-auto text-center ">
+    Copyright&copy;Marcof 2025
+    <!-- <p class="text-xs text-gray-400 mt-1">
+      Données fournies par <a class="underline" href="https://ipapi.co" target="_blank">ipapi.co</a>
+    </p> -->
+  </footer>
+</div>

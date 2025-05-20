@@ -1,0 +1,43 @@
+<div class="max-w-5xl mx-auto px-4">
+  <h1 class="text-3xl font-bold text-gray-800 mb-2 flex items-center">
+    <mat-icon class="mr-2 text-yellow-500">dashboard</mat-icon>
+    Cyber tools dash
+  </h1>
+  <p class="text-gray-600 mb-8">
+    Tableau de bord de cyber sécurité. Acces rapide à vos outils d’investigation et dernières statistiques.
+  </p>
+
+  <div class="bg-white rounded-lg p-6 shadow mb-8">
+    <h2 class="text-xl font-semibold mb-4 flex items-center">
+      <mat-icon class="mr-2 text-gray-700">flash_on</mat-icon>
+      Accès rapide
+    </h2>
+    <div class="flex flex-wrap gap-4">
+      <a routerLink="/ip" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded flex items-center transition">
+        <mat-icon class="mr-2">public</mat-icon> Inspecteur d’IP
+      </a>
+      <a routerLink="/cyber-tools" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded flex items-center transition">
+        <mat-icon class="mr-2">biotech</mat-icon> Outils Cyber
+      </a>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+    <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+      <mat-icon class="text-blue-500 mb-2">public</mat-icon>
+      <div class="text-2xl font-bold">{{ stats.analyzedIPs }}</div>
+      <div class="text-gray-500">Recherches totales</div>
+    </div>
+    <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+      <mat-icon class="text-green-500 mb-2">biotech</mat-icon>
+      <div class="text-2xl font-bold">{{ stats.cyberTools }}</div>
+      <div class="text-gray-500">Outils cyber</div>
+    </div>
+    <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+      <mat-icon class="text-yellow-500 mb-2">domain</mat-icon>
+      <div class="text-2xl font-bold">{{ stats.uniqueIPs }}</div>
+      <div class="text-gray-500">IPs uniques</div>
+    </div>
+  </div>
+
+</div>
